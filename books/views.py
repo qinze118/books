@@ -19,5 +19,7 @@ def search(request):
 		"results":results,
 		"query":query
 	})
-
+def contact(request):
+	form = ContactForm()
+	return render('contact.html',{'form':form})
 # Create your views here.
